@@ -15,6 +15,7 @@ public class ScoreCounter : MonoBehaviour
 
     //win screen
     [SerializeField] private TMP_Text winText;
+    [SerializeField] private GameObject winScreen;
 
     public void FixedUpdate()
     {
@@ -25,6 +26,7 @@ public class ScoreCounter : MonoBehaviour
 
         if (p1Score == 10 || p2Score == 10)
         {
+            winScreen.SetActive(true);
             if (p1Score > p2Score)
             {
                 winText.SetText("Player 1 Wins!");
