@@ -12,6 +12,7 @@ public class ScoreCounter : MonoBehaviour
     //Score GameObjects
     [SerializeField] private TMP_Text p1Text;
     [SerializeField] private TMP_Text p2Text;
+    [SerializeField] private GameObject activeScores;
 
     //win screen
     [SerializeField] private TMP_Text winText;
@@ -26,6 +27,7 @@ public class ScoreCounter : MonoBehaviour
 
         if (p1Score == 10 || p2Score == 10)
         {
+            activeScores.SetActive(false);
             winScreen.SetActive(true);
             if (p1Score > p2Score)
             {
