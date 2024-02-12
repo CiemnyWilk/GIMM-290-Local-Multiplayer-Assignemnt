@@ -516,7 +516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &587854139
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,7 +1089,9 @@ MonoBehaviour:
   p2Score: 0
   p1Text: {fileID: 1045651430}
   p2Text: {fileID: 801669087}
+  activeScores: {fileID: 587854138}
   winText: {fileID: 668240317}
+  winScreen: {fileID: 1421674505}
 --- !u!114 &955237739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,7 +1547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1421674506
 Transform:
   m_ObjectHideFlags: 0
@@ -2179,7 +2181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2040882831
 Transform:
   m_ObjectHideFlags: 0
