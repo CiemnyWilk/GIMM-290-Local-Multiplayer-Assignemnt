@@ -7,7 +7,8 @@ TagManager:
   - ground
   - Score
   - EventSystem
-  - Ability_Trigger
+  - Ability_Trigger_P1
+  - Ability_Trigger_P2
   layers:
   - Default
   - TransparentFX
