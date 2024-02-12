@@ -13,6 +13,9 @@ public class ScoreCounter : MonoBehaviour
     [SerializeField] private TMP_Text p1Text;
     [SerializeField] private TMP_Text p2Text;
 
+    //win screen
+    [SerializeField] private TMP_Text winText;
+
     public void FixedUpdate()
     {
         //Debug.Log("Player 1 Score: " + p1Score + " Player 2 Score: " + p2Score);
@@ -22,7 +25,14 @@ public class ScoreCounter : MonoBehaviour
 
         if (p1Score == 10 || p2Score == 10)
         {
-            Debug.Log("Winner!");
+            if (p1Score > p2Score)
+            {
+                winText.SetText("Player 1 Wins!");
+            }
+            else
+            {
+                winText.SetText("Player 2 Wins!");
+            }
         }
     }
 }
