@@ -5,10 +5,18 @@ using UnityEngine;
 public class Point_Trigger : MonoBehaviour
 {
     [SerializeField] private bool player1;
+    [SerializeField] private GameObject EventHandler;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "Score" && player1 == true)
+        {
+            EventHandler.GetComponent<ScoreCounter>().p1Score++;
+        }
+
+        if (other.tag == "Score" && player1 == false)
+        {
+            EventHandler.GetComponent<ScoreCounter>().p2Score++;
+        }
     }
 }
