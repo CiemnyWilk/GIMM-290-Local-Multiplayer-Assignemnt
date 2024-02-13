@@ -11,7 +11,6 @@ public class Abilites_Handler : MonoBehaviour
     //Runs all the abilities for P1
     public void P1AbilityTriggered(int ability)
     {
-        Debug.Log("P1 has used ability: " + ability);
         if (ability == 0)
         {
             Debug.Log("P1 has used an unfinished ability");
@@ -19,6 +18,7 @@ public class Abilites_Handler : MonoBehaviour
         else if (ability == 1)
         {
             Debug.Log("P1 has used speed ability");
+            player1.GetComponent<P1Movement>().p1moveSpeed = 5f;
         }
         // else if (ability == 2)
         // {

@@ -13,7 +13,7 @@ public class P1Movement : MonoBehaviour
     private float verticalInput;
 
     //movement variables
-    [SerializeField] private float p1moveSpeed;
+    [SerializeField] public float p1moveSpeed;
     [SerializeField] private float p1jumpForce;
 
     private void OnJump()
