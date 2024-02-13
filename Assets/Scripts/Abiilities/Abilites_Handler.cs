@@ -19,7 +19,7 @@ public class Abilites_Handler : MonoBehaviour
         {
             Debug.Log("P1 has used speed ability");
             player1.GetComponent<P1Movement>().p1moveSpeed = 5f;
-            Invoke("resetSpeed", 5f);
+            Invoke("P1ResetSpeed", 5f);
         }
         // else if (ability == 2)
         // {
@@ -33,8 +33,9 @@ public class Abilites_Handler : MonoBehaviour
         Debug.Log("P2 has used ability: " + ability);
     }
 
-    void resetSpeed()
+    void P1ResetSpeed()
     {
+        Debug.Log("Ability has ended");
         player1.GetComponent<P1Movement>().p1moveSpeed = 2f;
     }
 }
