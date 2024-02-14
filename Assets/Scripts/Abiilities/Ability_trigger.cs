@@ -9,6 +9,7 @@ public class Ability_trigger : MonoBehaviour
     //How to change what ability is given
     private int abilitySelected = 0;
     [SerializeField] bool speedAbility;
+    [SerializeField] bool jumpAbility;
 
     void Start()
     {
@@ -16,6 +17,14 @@ public class Ability_trigger : MonoBehaviour
         if (speedAbility == true)
         {
             abilitySelected = 1;
+        }
+        else if (jumpAbility == true)
+        {
+            abilitySelected = 2;
+        }
+        else
+        {
+            abilitySelected = 0;
         }
     }
 
@@ -27,8 +36,7 @@ public class Ability_trigger : MonoBehaviour
         }
         else if (other.tag == "Ability_Trigger_P2")
         {
-            Debug.Log("P2 Ability Triggered");
-            //add sending data to event system
+            eventHandler.gameObject.GetComponent<Abilites_Handler>().P2AbilityTriggered(abilitySelected);
         }
     }
 }

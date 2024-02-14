@@ -13,8 +13,8 @@ public class P2Movement : MonoBehaviour
     private float verticalInput;
 
     //movement variables
-    [SerializeField] private float p2moveSpeed;
-    [SerializeField] private float p2jumpForce;
+    [SerializeField] public float p2moveSpeed;
+    [SerializeField] public float p2jumpForce;
 
     private void OnJump2()
     {

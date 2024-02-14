@@ -14,7 +14,7 @@ public class P1Movement : MonoBehaviour
 
     //movement variables
     [SerializeField] public float p1moveSpeed;
-    [SerializeField] private float p1jumpForce;
+    [SerializeField] public float p1jumpForce;
 
     private void OnJump()
     {
