@@ -1423,6 +1423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sheild Ability
       objectReference: {fileID: 0}
+    - target: {fileID: 4371249377855616181, guid: 874742d3e4134684087b911f951e9e56, type: 3}
+      propertyPath: speedAbility
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7128254136925955809, guid: 874742d3e4134684087b911f951e9e56, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.66
