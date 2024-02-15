@@ -27,12 +27,18 @@ public class Abilites_Handler : MonoBehaviour
             player1.GetComponent<P1Movement>().p1jumpForce = 10f;
             GetComponent<Ability_resets>().Invoke("P1ResetJump", 5f);
         }
+        else if (ability == 3)
+        {
+            Debug.Log("P1 has used shield ability");
+
+            GetComponent<Ability_resets>().Invoke("P1ResetShield", 5f);
+        }
     }
 
     //Runs all the abilities for P2
     public void P2AbilityTriggered(int ability)
     {
-         if (ability == 0)
+        if (ability == 0)
         {
             Debug.Log("P2 has used an unfinished ability");
         }
@@ -47,6 +53,12 @@ public class Abilites_Handler : MonoBehaviour
             Debug.Log("P2 has used jump ability");
             player2.GetComponent<P2Movement>().p2jumpForce = 10f;
             GetComponent<Ability_resets>().Invoke("P2ResetJump", 5f);
+        }
+        else if (ability == 3)
+        {
+            Debug.Log("P1 has used shield ability");
+
+            GetComponent<Ability_resets>().Invoke("P2ResetShield", 5f);
         }
     }
 }

@@ -10,6 +10,7 @@ public class Ability_trigger : MonoBehaviour
     private int abilitySelected = 0;
     [SerializeField] bool speedAbility;
     [SerializeField] bool jumpAbility;
+    [SerializeField] bool shieldAbility;
 
     void Start()
     {
@@ -21,6 +22,10 @@ public class Ability_trigger : MonoBehaviour
         else if (jumpAbility == true)
         {
             abilitySelected = 2;
+        }
+        else if (shieldAbility == true)
+        {
+            abilitySelected = 3;
         }
         else
         {
