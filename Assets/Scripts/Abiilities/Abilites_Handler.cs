@@ -56,7 +56,7 @@ public class Abilites_Handler : MonoBehaviour
         }
         else if (ability == 3)
         {
-            Debug.Log("P1 has used shield ability");
+            Debug.Log("P2 has used shield ability");
 
             GetComponent<Ability_resets>().Invoke("P2ResetShield", 5f);
         }
