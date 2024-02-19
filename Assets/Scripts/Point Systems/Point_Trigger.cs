@@ -7,16 +7,32 @@ public class Point_Trigger : MonoBehaviour
     [SerializeField] private bool player1;
     [SerializeField] private GameObject EventHandler;
 
+    public bool isSafe = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Score" && player1 == true)
         {
-            EventHandler.GetComponent<ScoreCounter>().p1Score++;
+            if (isSafe == false)
+            {
+                EventHandler.GetComponent<ScoreCounter>().p1Score++;
+            }
+            else
+            {
+                Debug.Log("Player 1 is safe");
+            }
         }
 
         if (other.tag == "Score" && player1 == false)
         {
-            EventHandler.GetComponent<ScoreCounter>().p2Score++;
+                        if (isSafe == false)
+            {
+                EventHandler.GetComponent<ScoreCounter>().p2Score++;
+            }
+            else
+            {
+                Debug.Log("Player 2 is safe");
+            }
         }
     }
 }
