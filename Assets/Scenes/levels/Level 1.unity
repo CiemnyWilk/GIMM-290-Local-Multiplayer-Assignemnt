@@ -229,6 +229,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 555487717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &66029350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117475527992719048, guid: 8b3bfde42d14e7647aeb26c4e987c8bf, type: 3}
+  m_PrefabInstance: {fileID: 920823747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &190886904
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,11 +750,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693985079}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &767942312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9153866689329712386, guid: 8b3bfde42d14e7647aeb26c4e987c8bf, type: 3}
-  m_PrefabInstance: {fileID: 920823747}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &815523438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,18 +1309,22 @@ PrefabInstance:
     - target: {fileID: 6662503635999905629, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: activeScores
       value: 
-      objectReference: {fileID: 767942312}
+      objectReference: {fileID: 66029350}
     - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: xChords.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: yChords.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: zChords.Array.size
-      value: 5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
+      propertyPath: abilites.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: abilities.Array.size
@@ -1338,6 +1342,18 @@ PrefabInstance:
       propertyPath: zChords.Array.data[0]
       value: 3.692
       objectReference: {fileID: 0}
+    - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
+      propertyPath: abilites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1843318668157798804, guid: a50d3eda892e53248a3105873d9ecc10, type: 3}
+    - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
+      propertyPath: abilites.Array.data[1]
+      value: 
+      objectReference: {fileID: 1356319400070651418, guid: 874742d3e4134684087b911f951e9e56, type: 3}
+    - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
+      propertyPath: abilites.Array.data[2]
+      value: 
+      objectReference: {fileID: 1356319400070651418, guid: 2d11d45b8b5131c49adea55df6c97a72, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

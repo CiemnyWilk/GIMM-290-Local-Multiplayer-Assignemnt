@@ -43,5 +43,6 @@ public class Ability_trigger : MonoBehaviour
         {
             eventHandler.gameObject.GetComponent<Abilites_Handler>().P2AbilityTriggered(abilitySelected);
         }
+        object.des
     }
 }
