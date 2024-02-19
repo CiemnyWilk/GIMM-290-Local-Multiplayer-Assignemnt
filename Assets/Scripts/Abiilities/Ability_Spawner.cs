@@ -11,6 +11,8 @@ public class Ability_Spawner : MonoBehaviour
 
     [SerializeField] GameObject[] abilites;
 
+    [SerializeField] int delay;
+
     int lengthofx;
     int lengthofabilities;
 
@@ -19,8 +21,13 @@ public class Ability_Spawner : MonoBehaviour
     {
         int i = UnityEngine.Random.Range(0, lengthofx);
         int j = UnityEngine.Random.Range(0, lengthofabilities);
+
+        Debug.Log("Position: " + i + " Ability: " + j);
+
         Vector3 spawnPosition = new Vector3(xChords[i], yChords[i], zChords[i]);
-        Instantiate(abilites[j], spawnPosition, Quaternion.identity);
+        //Instantiate(abilites[j], spawnPosition, Quaternion.identity);
+
+        Instantiate (abilites[j], spawnPosition, abilites[j].transform.rotation);
     }
 
 
@@ -31,8 +38,8 @@ public class Ability_Spawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(DelayAction(5f));
-        lengthofx = xChords.Length - 1;
-        lengthofabilities = abilites.Length - 1;
+        lengthofx = xChords.Length;
+        lengthofabilities = abilites.Length;
     }
 
     void DoDelayAction(float delayTime)
@@ -47,6 +54,6 @@ public class Ability_Spawner : MonoBehaviour
 
         //Do the action after the delay time has finished.
         AbilitySpawner();
-        DoDelayAction(10f);
+        DoDelayAction(delay);
     }
 }
