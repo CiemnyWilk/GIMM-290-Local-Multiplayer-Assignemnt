@@ -19,7 +19,7 @@ public class Point_Trigger : MonoBehaviour
             }
             else
             {
-                Debug.Log("Player 1 is safe");
+                Debug.Log("Player 2 is safe");
             }
         }
 
@@ -31,7 +31,7 @@ public class Point_Trigger : MonoBehaviour
             }
             else
             {
-                Debug.Log("Player 2 is safe");
+                Debug.Log("Player 1 is safe");
             }
         }
     }
