@@ -38,11 +38,12 @@ public class Ability_trigger : MonoBehaviour
         if (other.tag == "Ability_Trigger_P1")
         {
             eventHandler.gameObject.GetComponent<Abilites_Handler>().P1AbilityTriggered(abilitySelected);
+            Destroy(gameObject);
         }
         else if (other.tag == "Ability_Trigger_P2")
         {
             eventHandler.gameObject.GetComponent<Abilites_Handler>().P2AbilityTriggered(abilitySelected);
+            Destroy(gameObject);
         }
-        object.des
     }
 }

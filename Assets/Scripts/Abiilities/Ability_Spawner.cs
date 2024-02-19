@@ -31,8 +31,8 @@ public class Ability_Spawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(DelayAction(5f));
-        lengthofx = xChords.Length;
-        lengthofabilities = abilites.Length;
+        lengthofx = xChords.Length - 1;
+        lengthofabilities = abilites.Length - 1;
     }
 
     void DoDelayAction(float delayTime)
