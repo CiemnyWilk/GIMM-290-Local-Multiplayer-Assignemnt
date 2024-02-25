@@ -25,4 +25,4 @@ The jump issue is sometimes no longer working. It can be fixed by just walking u
 
 Assignment 2 Changes:
 
-As I have already added a scoring system with UI I instead added a main menu that has the ability to exit game and select a level.
+As I have already added a scoring system with UI I instead added a main menu that can exit the game and select a level.
