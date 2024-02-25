@@ -1,3 +1,5 @@
+Assignment 1 Changes:
+
 P1 Controls:
 WASD to move with left shift to jump
 
@@ -18,4 +20,9 @@ I made a goal so players could feel pressured to try and attack as without a goa
 
 Known bugs:
 Some of the 3d models go off the screen and I just didn't have time to adjust them
-Jump issue sometimes no longer working. Can be fixed by just walking up something and falling again. (this bug is due to an issue with how unity runs its OnTriggerEnter)
+The jump issue is sometimes no longer working. It can be fixed by just walking up something and falling again. (this bug is due to an issue with how Unity runs its OnTriggerEnter)
+
+
+Assignment 2 Changes:
+
+As I have already added a scoring system with UI I instead added a main menu that has the ability to exit game and select a level.
