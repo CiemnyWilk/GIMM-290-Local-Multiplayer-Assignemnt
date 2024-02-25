@@ -18,6 +18,22 @@ public class Main_Menu : MonoBehaviour
         mainMenu.SetActive(false);
     }
 
+    public void Options()
+    {
+        // Set the options menu to active
+        optionsMenu.SetActive(true);
+        // Set the main menu to inactive
+        mainMenu.SetActive(false);
+    }
+
+    public void HowTo()
+    {
+        // Set the how to menu to active
+        howToMenu.SetActive(true);
+        // Set the main menu to inactive
+        mainMenu.SetActive(false);
+    }
+
     public void QuitGame()
     {
         // Quit the game
