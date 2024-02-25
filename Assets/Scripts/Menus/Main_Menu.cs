@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour
+public class Main_Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject levelSelectMenu;
+    [SerializeField] private GameObject optionsMenu;
+    [SerializeField] private GameObject howToMenu;
+    
+    
+    public void LevelSelect()
     {
-        
+        // Set the level select menu to active
+        levelSelectMenu.SetActive(true);
+        // Set the main menu to inactive
+        mainMenu.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
-        
+        // Quit the game
+        Application.Quit();
     }
 }
