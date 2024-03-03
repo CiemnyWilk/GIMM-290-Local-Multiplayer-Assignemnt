@@ -37,8 +37,8 @@ public class Score_Counter_Manager : MonoBehaviour, IGameManager
             P2_Score++;
         }
 
-        p1Text.SetText("P1 Score: " + p1Score);
-        p2Text.SetText("P2 Score: " + p2Score);
+        p1Text.SetText("P1 Score: " + P1_Score);
+        p2Text.SetText("P2 Score: " + P2_Score);
     }
 
     public void FixedUpdate()
