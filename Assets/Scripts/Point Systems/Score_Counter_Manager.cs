@@ -43,11 +43,11 @@ public class Score_Counter_Manager : MonoBehaviour, IGameManager
 
     public void FixedUpdate()
     {
-        if (p1Score == 10 || p2Score == 10)
+        if (P1_Score == 10 || P2_Score == 10)
         {
             activeScores.SetActive(false);
             winScreen.SetActive(true);
-            if (p1Score > p2Score)
+            if (P1_Score > P2_Score)
             {
                 winText.SetText("Player 1 Wins!");
             }
