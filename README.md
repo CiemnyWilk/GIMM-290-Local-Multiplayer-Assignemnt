@@ -26,3 +26,7 @@ The jump issue is sometimes no longer working. It can be fixed by just walking u
 Assignment 2 Changes:
 
 As I have already added a scoring system with UI I instead added a main menu that can exit the game and select a level.
+
+Assignment 3 Changes:
+
+Added manager system and updated score counter to use it. Added interactable cubes that can be pushed around. No Changes made to the Main Menu.
