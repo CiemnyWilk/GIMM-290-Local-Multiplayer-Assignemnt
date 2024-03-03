@@ -7,15 +7,18 @@ public class Point_Trigger : MonoBehaviour
     [SerializeField] private bool player1;
     [SerializeField] private GameObject EventHandler;
 
+    private int p1 = 1;
+    private int p2 = 2;
+
     public bool isSafe = false;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Score" && player1 == true)
         {
             if (isSafe == false)
             {
-                EventHandler.GetComponent<ScoreCounter>().p1Score++;
+                Managers.ScoreCounter.IncrementScore(p1);
             }
             else
             {
@@ -27,7 +30,7 @@ public class Point_Trigger : MonoBehaviour
         {
                         if (isSafe == false)
             {
-                EventHandler.GetComponent<ScoreCounter>().p2Score++;
+                Managers.ScoreCounter.IncrementScore(p2);
             }
             else
             {

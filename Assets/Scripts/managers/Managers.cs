@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(InventoryManager))]
+[RequireComponent(typeof(Score_Counter_Manager))]
 
 public class Managers : MonoBehaviour {
 	public static InventoryManager Inventory {get; private set;}
@@ -12,10 +13,11 @@ public class Managers : MonoBehaviour {
 	
 	void Awake() {
 		Inventory = GetComponent<InventoryManager>();
+		ScoreCounter = GetComponent<Score_Counter_Manager>();
 
 		startSequence = new List<IGameManager>();
-		startSequence.Add(ScoreCounter);
 		startSequence.Add(Inventory);
+		startSequence.Add(ScoreCounter);
 
 		StartCoroutine(StartupManagers());
 	}
