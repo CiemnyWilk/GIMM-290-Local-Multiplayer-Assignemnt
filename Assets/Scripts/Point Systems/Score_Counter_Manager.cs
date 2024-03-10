@@ -43,7 +43,7 @@ public class Score_Counter_Manager : MonoBehaviour, IGameManager
 
     public void FixedUpdate()
     {
-        if (P1_Score == 10 || P2_Score == 10)
+        if (P1_Score == 5 || P2_Score == 5)
         {
             activeScores.SetActive(false);
             winScreen.SetActive(true);
