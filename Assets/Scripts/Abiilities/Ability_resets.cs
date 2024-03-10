@@ -43,12 +43,12 @@ public class Ability_resets : MonoBehaviour
     void P1ResetShield()
     {
         Debug.Log("P1 Sheild ability has ended");
-        player1.GetComponentInChildren<Point_Trigger>().isSafe = false;
+        player1.GetComponentInChildren<Point_Trigger>().isSafe = true;
     }
 
     void P2ResetShield()
     {
         Debug.Log("P2 Sheild ability has ended");
-        player2.GetComponentInChildren<Point_Trigger>().isSafe = false;
+        player2.GetComponentInChildren<Point_Trigger>().isSafe = true;
     }
 }

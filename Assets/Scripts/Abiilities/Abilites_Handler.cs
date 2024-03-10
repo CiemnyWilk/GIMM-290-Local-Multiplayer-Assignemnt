@@ -29,9 +29,9 @@ public class Abilites_Handler : MonoBehaviour
         }
         else if (ability == 3)
         {
-            Debug.Log("P1 has used shield ability");
-            player1.GetComponentInChildren<Point_Trigger>().isSafe = true;
-            GetComponent<Ability_resets>().Invoke("P1ResetShield", 5f);
+            Debug.Log("P1 has gained the ability to attack");
+            player2.GetComponentInChildren<Point_Trigger>().isSafe = false;
+            GetComponent<Ability_resets>().Invoke("P1ResetShield", 20f);
         }
     }
 
@@ -56,9 +56,9 @@ public class Abilites_Handler : MonoBehaviour
         }
         else if (ability == 3)
         {
-            Debug.Log("P2 has used shield ability");
-            player2.GetComponentInChildren<Point_Trigger>().isSafe = true;
-            GetComponent<Ability_resets>().Invoke("P2ResetShield", 5f);
+            Debug.Log("P2 has gained the ability to attack");
+            player1.GetComponentInChildren<Point_Trigger>().isSafe = false;
+            GetComponent<Ability_resets>().Invoke("P2ResetShield", 20f);
         }
     }
 }

@@ -10,14 +10,20 @@ public class Point_Trigger : MonoBehaviour
     private int p1 = 1;
     private int p2 = 2;
 
-    public bool isSafe = false;
+    public bool isSafe = true;
 
+    void Update()
+    {
+        Debug.Log(isSafe);
+    }
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Score" && player1 == true)
         {
             if (isSafe == false)
             {
+                Debug.Log(isSafe);
                 Managers.ScoreCounter.IncrementScore(p1);
             }
             else
@@ -28,8 +34,9 @@ public class Point_Trigger : MonoBehaviour
 
         if (other.tag == "Score" && player1 == false)
         {
-                        if (isSafe == false)
+            if (isSafe == false)
             {
+                Debug.Log(isSafe);
                 Managers.ScoreCounter.IncrementScore(p2);
             }
             else
