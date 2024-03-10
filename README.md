@@ -30,3 +30,6 @@ As I have already added a scoring system with UI I instead added a main menu tha
 Assignment 3 Changes:
 
 Added manager system and updated score counter to use it. Added interactable cubes that can be pushed around. No Changes made to the Main Menu.
+
+Assignment 4 Changes:
+Reworked scoring so that players had to collect an item to have a limited time to score off of other person and made it so you only have to reach 5 points to win. Reworked ability spawn locations.
