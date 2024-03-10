@@ -1638,7 +1638,7 @@ PrefabInstance:
       objectReference: {fileID: 66029350}
     - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: delay
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9084100944508553220, guid: 79d67644970b33d40aaae1d8eb41f0a4, type: 3}
       propertyPath: xChords.Array.size
